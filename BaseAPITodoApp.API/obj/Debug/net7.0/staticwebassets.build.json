@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "K7BSLLKU4bKjaJuykN1EeG6tS3uWEBW3QKJEHrkXJ9M=",
+  "Source": "BaseAPITodoApp.API",
+  "BasePath": "_content/BaseAPITodoApp.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
