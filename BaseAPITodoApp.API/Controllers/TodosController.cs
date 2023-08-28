@@ -37,7 +37,8 @@ namespace BaseAPITodoApp.API.Controllers
             await _todoRepository.AddProductAsync(new Todo
                 {
                  Description   = todo.Description,
-                 Header = todo.Header
+                 Header = todo.Header,
+                 CreatedDate = todo.CreatedDate
                 });
             await _todoRepository.SaveAsync();
             return Ok();
@@ -54,7 +55,8 @@ namespace BaseAPITodoApp.API.Controllers
         [HttpPut]
         public async Task<IActionResult> Update(Todo todo)
         {
-             _todoRepository.Update(todo);
+             var res = _todoRepository.Update(todo);
+             todo.UpdatedDate = DateTime.Now;   
              await _todoRepository.SaveAsync();
              return Ok();
         }
